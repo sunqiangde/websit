@@ -1,0 +1,2821 @@
+/* ===== 互联网商务风格重置样式 ===== */
+:root {
+  /* 现代化商务配色方案 */
+  --vp-primary: #0F52BA;        /* 专业商务蓝 */
+  --vp-primary-light: #3A7BFF;  /* 浅商务蓝 */
+  --vp-primary-lighter: #6BA1FF; /* 更浅商务蓝 */
+  --vp-primary-lightest: #E8F0FF; /* 最浅商务蓝 */
+  --vp-primary-dark: #0A3D91;    /* 深商务蓝 */
+  --vp-primary-darker: #062A66;  /* 更深商务蓝 */
+  
+  /* 中性色调 - 现代化商务风格 */
+  --vp-neutral-50: #FAFAFA;
+  --vp-neutral-100: #F5F5F5;
+  --vp-neutral-200: #E5E5E5;
+  --vp-neutral-300: #D4D4D4;
+  --vp-neutral-400: #A3A3A3;
+  --vp-neutral-500: #737373;
+  --vp-neutral-600: #525252;
+  --vp-neutral-700: #404040;
+  --vp-neutral-800: #262626;
+  --vp-neutral-900: #171717;
+  
+  /* 背景与文本色 */
+  --vp-background: #FFFFFF;
+  --vp-background-alt: #F8FAFC;
+  --vp-background-soft: #F1F5F9;
+  --vp-background-mute: #E2E8F0;
+  
+  --vp-text-1: #1E293B;
+  --vp-text-2: #475569;
+  --vp-text-3: #64748B;
+  
+  /* 成功、警告、错误色 */
+  --vp-success: #10B981;
+--vp-warning: #F59E0B;
+  --vp-error: #EF4444;
+  
+  /* 间距系统 - 8px网格 */
+  --vp-space-1: 0.25rem;  /* 4px */
+  --vp-space-2: 0.5rem;   /* 8px */
+  --vp-space-3: 0.75rem;  /* 12px */
+  --vp-space-4: 1rem;     /* 16px */
+  --vp-space-5: 1.25rem;  /* 20px */
+  --vp-space-6: 1.5rem;   /* 24px */
+  --vp-space-8: 2rem;     /* 32px */
+  --vp-space-10: 2.5rem;  /* 40px */
+--vp-space-12: 3rem;    /* 48px */
+  --vp-space-16: 4rem;    /* 64px */
+  --vp-space-20: 5rem;    /* 80px */
+  --vp-space-24: 6rem;    /* 96px */
+/* 圆角系统 */
+  --vp-radius-sm: 0.375rem;  /* 6px */
+  --vp-radius: 0.5rem;       /* 8px */
+  --vp-radius-md: 0.75rem;   /* 12px */
+  --vp-radius-lg: 1rem;      /* 16px */
+  --vp-radius-xl: 1.5rem;    /* 24px */
+  --vp-radius-2xl: 2rem;     /* 32px */
+  
+  /* 阴影系统 */
+  --vp-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --vp-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --vp-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --vp-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --vp-shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  
+  /* 深色模式变量 */
+  .dark {
+    --vp-background: #0F172A;
+    --vp-background-alt: #1E293B;
+    --vp-background-soft: #334155;
+    --vp-background-mute: #475569;
+    
+    --vp-text-1: #F1F5F9;
+    --vp-text-2: #E2E8F0;
+    --vp-text-3: #CBD5E1;
+}
+
+/* ===== 简洁现代化科技风格重置样式 ===== */
+:root {
+  /* 现代化科技配色方案 */
+  --vp-primary: #2563EB;
+  --vp-primary-light: #3B82F6;
+  --vp-primary-lighter: #60A5FA;
+  --vp-primary-lightest: #DBEAFE;
+  --vp-primary-dark: #1D4ED8;
+  --vp-primary-darker: #1E40AF;
+  
+  /* 中性色调 */
+  --vp-neutral-50: #F8FAFC;
+  --vp-neutral-100: #F1F5F9;
+  --vp-neutral-200: #E2E8F0;
+  --vp-neutral-300: #CBD5E1;
+  --vp-neutral-400: #94A3B8;
+  --vp-neutral-500: #64748B;
+  --vp-neutral-600: #475569;
+  --vp-neutral-700: #334155;
+  --vp-neutral-800: #1E293B;
+  --vp-neutral-900: #0F172A;
+  
+  /* 背景与文本色 */
+  --vp-background: #FFFFFF;
+  --vp-background-alt: #F8FAFC;
+  --vp-background-soft: #F1F5F9;
+  --vp-background-mute: #E2E8F0;
+  --vp-text-1: #1E293B;
+  --vp-text-2: #475569;
+--vp-text-3: #64748B;
+  
+  /* 间距系统 */
+  --vp-space-1: 0.25rem;
+  --vp-space-2: 0.5rem;
+  --vp-space-3: 0.75rem;
+  --vp-space-4: 1rem;
+  --vp-space-5: 1.25rem;
+  --vp-space-6: 1.5rem;
+  --vp-space-8: 2rem;
+  --vp-space-10: 2.5rem;
+  --vp-space-12: 3rem;
+  --vp-space-16: 4rem;
+  --vp-space-20: 5rem;
+  --vp-space-24: 6rem;
+  
+  /* 圆角系统 */
+  --vp-radius-sm: 0.375rem;
+  --vp-radius: 0.5rem;
+  --vp-radius-md: 0.75rem;
+  --vp-radius-lg: 1rem;
+  --vp-radius-xl: 1.5rem;
+  --vp-radius-2xl: 2rem;
+  
+  /* 阴影系统 */
+  --vp-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --vp-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --vp-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --vp-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+/* ===== 基础重置样式 ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--vp-text-1);
+  background-color: var(--vp-background);
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== 精确修复：导航栏两端对齐 ===== */
+
+/* 1. 移除冲突的样式 */
+.VPNavBarTitle {
+  margin-right: 0 !important; /* 移除破坏flex布局的margin */
+}
+
+.VPNavBarMenu {
+  margin-left: 0 !important; /* 移除破坏flex布局的margin */
+}
+
+/* 2. 确保VitePress内置容器布局正确工作 */
+.VPNavBar .container {
+  display: flex !important;
+  justify-content: space-between !important; /* 核心：强制两端对齐 */
+  align-items: center !important;
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 24px !important;
+  box-sizing: border-box !important;
+}
+
+/* 3. 左侧标题区域样式 */
+.VPNavBarTitle {
+  display: flex !important;
+align-items: center !important;
+  font-size: 1.5rem !important;
+font-weight: 700 !important;
+  color: var(--vp-primary) !important;
+  white-space: nowrap !important;
+}
+
+/* 4. 右侧内容区域 - 确保导航右对齐 */
+.VPNavBar .content {
+  flex: 1 !important;
+  display: flex !important;
+  justify-content: flex-end !important; /* 关键：内容右对齐 */
+  align-items: center !important;
+}
+
+/* 5. 内容主体 - 确保导航菜单正确排列 */
+.VPNavBar .content-body {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important; /* 关键：内容右对齐 */
+  gap: 1rem !important;
+}
+
+/* 6. 导航菜单样式 */
+.VPNavBarMenu {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+/* 7. 隐藏干扰元素 */
+.VPNavBar .social-links,
+.VPNavBar .appearance,
+.VPNavBar .translations,
+.VPNavBar .extra {
+  display: none !important;
+}
+
+/* 2. 主容器 - 强制两端对齐布局 */
+.VPNav .container {
+  width: 100% !important;
+  max-width: 1200px !important;
+margin: 0 auto !important;
+  padding: 0 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important; /* 核心：强制两端对齐 */
+  height: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* 3. 左侧标题区域 - 强制左对齐 */
+.VPNavBarTitle {
+  margin-right: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: var(--vp-primary) !important;
+  white-space: nowrap !important;
+}
+
+/* 4. 右侧导航区域 - 强制右对齐 */
+.VPNavBarMenu {
+  margin-left: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+/* 5. 导航链接样式 */
+.VPNavBarMenuLink {
+  color: var(--vp-text-1) !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  padding: 8px 12px !important;
+  border-radius: var(--vp-radius-sm) !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  white-space: nowrap !important;
+}
+
+.VPNavBarMenuLink:hover,
+.VPNavBarMenuLink.active {
+  color: var(--vp-primary) !important;
+  background-color: var(--vp-primary-lightest) !important;
+}
+
+/* 6. 移除可能影响布局的元素 */
+.VPNavBar .social-links {
+  display: none !important;
+}
+
+.VPNavBar .appearance {
+  display: none !important;
+}
+
+/* 7. 响应式设计 */
+@media (max-width: 1024px) {
+  .VPNav .container {
+    padding: 0 20px !important;
+    max-width: 1000px !important;
+  }
+  
+  .VPNavBarMenuLink {
+    font-size: 13px !important;
+    padding: 6px 10px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .VPNav {
+    height: 68px !important;
+  }
+  
+  .VPNav .container {
+    padding: 0 16px !important;
+  }
+  
+  .VPNavBarMenu {
+    gap: 4px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .VPNav {
+    height: 64px !important;
+  }
+  
+  .VPNav .container {
+    padding: 0 12px !important;
+  }
+  
+  .VPNavBarTitle {
+    font-size: 1.25rem !important;
+  }
+}
+
+/* 8. 深色模式适配 */
+.dark .VPNav {
+  background: rgba(15, 23, 42, 0.98) !important;
+  border-bottom-color: var(--vp-neutral-800) !important;
+}
+
+.dark .VPNavBarMenuLink {
+  color: var(--vp-text-1) !important;
+}
+
+.dark .VPNavBarMenuLink:hover,
+.dark .VPNavBarMenuLink.active {
+  color: var(--vp-primary-light) !important;
+  background-color: rgba(59, 130, 246, 0.1) !important;
+}
+
+/* 9. 确保内容不被遮挡 */
+.VPHero {
+  margin-top: 76px !important;
+}
+
+@media (max-width: 768px) {
+  .VPHero {
+    margin-top: 68px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .VPHero {
+    margin-top: 64px !important;
+  }
+}
+
+/* ===== 现代化科技公司风格字体与排版系统 ===== */
+h1, h2, h3, h4, h5, h6 {
+font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: var(--vp-space-4);
+  color: var(--vp-text-1);
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--vp-primary) 0%, var(--vp-primary-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--vp-space-6);
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--vp-primary-dark);
+  margin-bottom: var(--vp-space-5);
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--vp-text-1);
+  margin-bottom: var(--vp-space-4);
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--vp-text-1);
+  margin-bottom: var(--vp-space-3);
+}
+
+p {
+  margin-bottom: var(--vp-space-4);
+  color: var(--vp-text-2);
+  line-height: 1.7;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+/* ===== 现代化科技公司风格导航栏设计 ===== */
+.VPNav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--vp-neutral-200);
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.VPNav .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--vp-space-6);
+}
+
+.VPNav .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--vp-primary);
+  letter-spacing: -0.02em;
+}
+
+.VPNavBar .content {
+  padding: var(--vp-space-3) 0;
+}
+
+/* 移除可能影响布局的重复样式 */
+.VPNavBar .content-body {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+}
+
+/* 确保所有元素都在正确的位置 */
+.VPNav * {
+  box-sizing: border-box;
+}
+
+/* 科技风格的banner字体样式 */
+.VPHero .name {
+  /* 蓝色到青色的渐变效果 */
+  background: linear-gradient(90deg, #0070f3 0%, #09f 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  /* 轻微的发光效果增强科技感 */
+  text-shadow: 0 0 10px rgba(0, 112, 243, 0.3) !important;
+}
+
+/* 将"科技创新，专业服务"文字改为白色相关 */
+.VPHero .text {
+  color: white !important;
+  /* 为确保在不同背景下都清晰可见，添加轻微的文字阴影 */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* 深色模式下保持白色显示 */
+.dark .VPHero .text {
+  color: white !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) !important;
+}
+
+.VPHero .text {
+  /* 深蓝色调，保持清晰度的同时增强科技感 */
+  color: #0070f3 !important;
+  /* 轻微的文字阴影 */
+  text-shadow: 0 1px 2px rgba(0, 112, 243, 0.2) !important;
+}
+
+.VPHero .tagline {
+  /* 科技蓝灰色调，保持可读性 */
+  color: #336699 !important;
+}
+
+/* 深色模式下的适配 */
+.dark .VPHero .name {
+  /* 深色模式下的渐变效果 */
+  background: linear-gradient(90deg, #64b5f6 0%, #29b6f6 100%) !important;
+  text-shadow: 0 0 10px rgba(100, 181, 246, 0.3) !important;
+}
+
+.dark .VPHero .text {
+  color: #64b5f6 !important;
+  text-shadow: 0 1px 2px rgba(100, 181, 246, 0.2) !important;
+}
+
+.dark .VPHero .tagline {
+  color: #90caf9 !important;
+}
+
+/* ===== 低调高级风格Banner样式 ===== */
+/* 重置之前的科技风格样式 */
+.VPHero {
+  position: relative;
+  overflow: hidden;
+  /* 使用优雅的深灰色渐变，营造低调高级感 */
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%) !important;
+  color: #1e293b !important;
+  z-index: 1;
+}
+
+/* 添加微妙的背景纹理 */
+.VPHero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* 微妙的噪声纹理 */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+  z-index: 0;
+}
+
+/* 移除之前的网格效果 */
+.VPHero::after {
+  display: none !important;
+}
+
+/* 保持容器在最上层 */
+.VPHero .container {
+  position: relative;
+  z-index: 2 !important;
+}
+
+/* 公司名称 - 优雅的深灰色 */
+.VPHero .name {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #0f172a !important;
+  text-shadow: none !important;
+  background: none !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  letter-spacing: -0.02em;
+}
+
+/* "科技创新，专业服务"文字 - 深灰色带轻微金属质感 */
+.VPHero .text {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1e293b !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  letter-spacing: -0.01em;
+}
+
+/* 标语文字 - 柔和的灰色 */
+.VPHero .tagline {
+  font-size: 1.375rem;
+  color: #64748b !important;
+  opacity: 1 !important;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* 按钮样式优化 - 简约优雅 */
+.VPHero .actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.VPHero .actions .VPButton {
+  background: #1e293b !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 6px !important;
+  padding: 0.75rem 1.5rem !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
+}
+
+.VPHero .actions .VPButton:hover {
+  background: #334155 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+.VPHero .actions .VPButton.alt {
+  background: transparent !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #1e293b !important;
+}
+
+.VPHero .actions .VPButton.alt:hover {
+  background: #f1f5f9 !important;
+  border-color: #94a3b8 !important;
+  color: #0f172a !important;
+}
+
+/* 深色模式下的适配 - 柔和的深色背景 */
+.dark .VPHero {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #020617 100%) !important;
+}
+
+.dark .VPHero::before {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #020617 100%) !important;
+}
+
+.dark .VPHero .name {
+  color: #f8fafc !important;
+}
+
+.dark .VPHero .text {
+  color: #e2e8f0 !important;
+}
+
+.dark .VPHero .tagline {
+  color: #94a3b8 !important;
+}
+
+.dark .VPHero .actions .VPButton {
+  background: #f8fafc !important;
+  color: #0f172a !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+}
+
+.dark .VPHero .actions .VPButton:hover {
+  background: #e2e8f0 !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark .VPHero .actions .VPButton.alt {
+  background: transparent !important;
+  border: 1px solid #334155 !important;
+  color: #f8fafc !important;
+}
+
+.dark .VPHero .actions .VPButton.alt:hover {
+  background: #334155 !important;
+  border-color: #475569 !important;
+}
+
+/* 响应式调整 - 保持优雅比例 */
+@media (max-width: 768px) {
+  .VPHero .name {
+    font-size: 3rem !important;
+  }
+  
+  .VPHero .text {
+    font-size: 1.5rem !important;
+  }
+  
+  .VPHero .tagline {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .VPHero .name {
+    font-size: 2rem !important;
+  }
+  
+  .VPHero .text {
+    font-size: 1.3rem !important;
+  }
+  
+  .VPHero .tagline {
+    font-size: 1rem !important;
+  }
+  
+  .VPHero .actions {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+  }
+  
+  .VPHero .actions .VPButton {
+    width: 100% !important;
+    max-width: 280px !important;
+  }
+}
+
+/* 移除之前添加的科技感动画 */
+@keyframes glowPulse {
+  from {}
+  to {}
+}
+
+@keyframes gridMove {
+  from {}
+  to {}
+}
+
+*/
+
+/* 额外的导航栏响应式优化 - 保持原有代码不变 */
+@media (max-width: 768px) {
+  /* 增强导航栏在平板设备上的适配性 */
+  .VPNav {
+    height: auto !important;
+    min-height: 68px;
+  }
+  
+  .VPNavBarMenu {
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 0.5rem 0;
+  }
+  
+  .VPNavBarMenuLink {
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.9rem !important;
+    margin: 0 2px;
+  }
+  
+  /* 确保移动设备上触摸目标足够大 */
+  .VPNavScreen .vp-nav-links .nav-link {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* 增强导航栏在手机设备上的适配性 */
+  .VPNav {
+    min-height: 64px;
+  }
+  
+  .VPNav .container {
+    padding: 0 0.75rem !important;
+  }
+  
+  .VPNavBarMenuLink {
+    padding: 0.4rem 0.6rem !important;
+    font-size: 0.85rem !important;
+  }
+  
+  /* 优化导航栏标题在小屏幕上的显示 */
+  .VPNavBarTitle {
+    font-size: 1.2rem !important;
+  }
+  
+  /* 调整导航链接的间距和大小 */
+  .VPNavScreen .vp-nav-links {
+    gap: 0.4rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  /* 针对超小屏幕设备的额外优化 */
+  .VPNavBarMenuLink {
+    padding: 0.3rem 0.5rem !important;
+    font-size: 0.8rem !important;
+  }
+  
+  .VPNavScreen .vp-nav-links .nav-link {
+    font-size: 0.8rem !important;
+    padding: 0.25rem 0.5rem !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .VPNav .container {
+    padding: 0 20px !important;
+    max-width: 1000px !important;
+  }
+  
+.VPNavBarMenuLink {
+    font-size: 13px !important;
+    padding: 6px 10px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .VPNav {
+    height: 68px !important;
+  }
+  
+  .VPNav .container {
+    padding: 0 16px !important;
+  }
+  
+  .VPNavBarMenu {
+gap: 4px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .VPNav {
+    height: 64px !important;
+  }
+  
+  .VPNav .container {
+    padding: 0 12px !important;
+  }
+  
+  .VPNavBarTitle {
+    font-size: 1.25rem !important;
+  }
+}
+
+/* 8. 深色模式适配 */
+.dark .VPNav {
+  background: rgba(15, 23, 42, 0.98) !important;
+  border-bottom-color: var(--vp-neutral-800) !important;
+}
+
+.dark .VPNavBarMenuLink {
+  color: var(--vp-text-1) !important;
+}
+
+.dark .VPNavBarMenuLink:hover,
+.dark .VPNavBarMenuLink.active {
+  color: var(--vp-primary-light) !important;
+  background-color: rgba(59, 130, 246, 0.1) !important;
+}
+
+/* 9. 确保内容不被遮挡 */
+.VPHero {
+  margin-top: 76px !important;
+}
+
+@media (max-width: 768px) {
+  .VPHero {
+    margin-top: 68px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .VPHero {
+    margin-top: 64px !important;
+  }
+}
+
+/* ===== 现代化科技公司风格字体与排版系统 ===== */
+h1, h2, h3, h4, h5, h6 {
+font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: var(--vp-space-4);
+  color: var(--vp-text-1);
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--vp-primary) 0%, var(--vp-primary-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--vp-space-6);
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--vp-primary-dark);
+  margin-bottom: var(--vp-space-5);
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--vp-text-1);
+  margin-bottom: var(--vp-space-4);
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--vp-text-1);
+  margin-bottom: var(--vp-space-3);
+}
+
+p {
+  margin-bottom: var(--vp-space-4);
+  color: var(--vp-text-2);
+  line-height: 1.7;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+/* ===== 现代化科技公司风格导航栏设计 ===== */
+.VPNav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--vp-neutral-200);
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.VPNav .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--vp-space-6);
+}
+
+.VPNav .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--vp-primary);
+  letter-spacing: -0.02em;
+}
+
+.VPNavBar .content {
+  padding: var(--vp-space-3) 0;
+}
+
+.VPNavBar .content-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.VPNavScreen .vp-nav-links {
+display: flex;
+  gap: var(--vp-space-8);
+  align-items: center;
+}
+
+.VPNavScreen .vp-nav-links .nav-link {
+  color: var(--vp-text-2);
+  text-decoration: none;
+  font-weight: 500;
+  padding: var(--vp-space-2) var(--vp-space-4);
+  border-radius: var(--vp-radius);
+  transition: all 0.3s ease;
+  position: relative;
+  font-size: 1rem;
+}
+
+.VPNavScreen .vp-nav-links .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--vp-primary);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.VPNavScreen .vp-nav-links .nav-link:hover {
+  color: var(--vp-primary);
+  transform: translateY(-1px);
+}
+
+.VPNavScreen .vp-nav-links .nav-link:hover::after {
+  width: 100%;
+}
+
+.VPNavScreen .vp-nav-links .nav-link.active {
+  color: var(--vp-primary);
+  font-weight: 600;
+}
+
+.VPNavScreen .vp-nav-links .nav-link.active::after {
+  width: 100%;
+}
+
+/* ===== 现代化科技风格Hero区域设计 ===== */
+.VPHero {
+  background: var(--vp-tech-gradient);
+  color: white;
+  padding: 2rem 0 var(--vp-space-24);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.VPHero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px);
+  }
+  50% { 
+    transform: translateY(-10px);
+  }
+}
+
+.VPHero .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 var(--vp-space-6);
+  position: relative;
+  z-index: 2;
+}
+
+.VPHero .name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: var(--vp-space-4);
+  background: linear-gradient(45deg, #fff, #F0F4F8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 8px 16px rgba(37, 99, 235, 0.3);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.VPHero .text {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: var(--vp-space-4);
+  opacity: 0.95;
+  letter-spacing: 0.01em;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.VPHero .tagline {
+  font-size: 1.375rem;
+  opacity: 0.9;
+  margin-bottom: var(--vp-space-10);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+.VPHero .actions {
+  display: flex;
+  gap: var(--vp-space-4);
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+/* ===== 服务领域样式 - 横向排列可换行 ===== */
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* 将标题蓝色字体改为黑色相关字体 */
+.VPNav .title {
+  color: var(--vp-text-1) !important;
+  /* 使用主文本颜色（接近黑色）代替原有的蓝色 */
+}
+
+/* 移除h1的渐变效果，改为纯黑色文本 */
+h1 {
+  background: none !important;
+  -webkit-background-clip: none !important;
+  -webkit-text-fill-color: var(--vp-text-1) !important;
+  background-clip: none !important;
+  color: var(--vp-text-1) !important;
+}
+
+/* 将h2的蓝色改为黑色系颜色 */
+h2 {
+  color: var(--vp-text-1) !important;
+  /* 使用主文本颜色代替原有的深蓝色 */
+}
+
+/* 确保所有层级标题都使用黑色系颜色 */
+h3, h4, h5, h6 {
+  color: var(--vp-text-1) !important;
+}
+
+/* 导航栏标题也改为黑色系 */
+.VPNavBarTitle {
+  color: var(--vp-text-1) !important;
+}
+
+/* 深色模式下的标题颜色适配 */
+.dark .VPNav .title,
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark .VPNavBarTitle {
+  color: var(--vp-text-1) !important;
+  /* 在深色模式下继续使用主文本颜色，确保可读性 */
+}
+
+/* 确保没有其他地方的标题使用蓝色 */
+:root {
+  /* 重置可能影响标题颜色的变量（如果有需要） */
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  width: calc(33.333% - 1.5rem);
+  min-width: 280px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.service-card h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--vp-primary);
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: var(--vp-text-2);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.service-details {
+  margin-top: 1rem;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+}
+
+.service-features li {
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  color: var(--vp-text-3);
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.service-features li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--vp-primary);
+  font-weight: bold;
+}
+
+.service-expand {
+  margin-top: 1rem;
+  color: var(--vp-primary);
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.service-expand:hover {
+  background: rgba(79, 70, 229, 0.05);
+}
+
+/* 响应式设计 - 服务领域卡片布局调整 */
+@media (max-width: 1024px) {
+  .service-card {
+    width: calc(50% - 1.5rem);
+  }
+}
+@media (max-width: 768px) {
+  .services-grid {
+    gap: 1rem;
+  }
+  
+  .service-card {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+/* 确保所有元素都在正确的位置 */
+.VPNav * {
+  box-sizing: border-box;
+}
+
+/* 减小VPHero高度，保持现有设计风格 */
+.VPHero {
+  padding: var(--vp-space-24) 0 var(--vp-space-16) !important;
+  /* 通过减小上下padding来降低banner高度 */
+}
+
+@media (max-width: 768px) {
+  .VPHero {
+    padding: var(--vp-space-16) 0 var(--vp-space-12) !important;
+    /* 在平板设备上进一步减小padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .VPHero {
+    padding: var(--vp-space-12) 0 var(--vp-space-8) !important;
+    /* 在移动设备上使用更小的padding */
+  }
+}
+/* ===== 全新优化的Banner样式 - 保持原有布局 ===== */
+/* Banner容器样式 */
+.VPHero {
+  /* 优雅的蓝紫色渐变背景 */
+  background: linear-gradient(135deg, #0F52BA 0%, #4A55A2 100%) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  padding: var(--vp-space-32) 0 var(--vp-space-24) !important;
+  text-align: center !important;
+  margin-top: 76px !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+}
+
+/* 添加精致的背景装饰 */
+.VPHero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.15) 0%, transparent 25%),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 30%);
+  z-index: 0;
+}
+
+/* 添加科技感网格线 */
+.VPHero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+  z-index: 0;
+}
+
+/* 确保内容在装饰元素之上 */
+.VPHero .container {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* 公司名称样式 - 增强视觉冲击力 */
+.VPHero .name {
+  font-size: 4rem !important;
+  font-weight: 800 !important;
+  margin-bottom: var(--vp-space-4) !important;
+  color: white !important;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+  letter-spacing: -0.02em !important;
+  background: linear-gradient(90deg, #FFFFFF, #E0F2FE) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  animation: fadeInUp 0.8s ease-out !important;
+}
+
+/* "科技创新，专业服务"主标题样式 */
+.VPHero .text {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  margin-bottom: var(--vp-space-4) !important;
+  opacity: 1 !important;
+  color: white !important;
+  letter-spacing: 0.02em !important;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+  animation: fadeInUp 0.8s ease-out 0.2s both !important;
+}
+
+/* 副标题样式 */
+.VPHero .tagline {
+  font-size: 1.25rem !important;
+  opacity: 1 !important;
+  margin-bottom: var(--vp-space-10) !important;
+  max-width: 700px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  line-height: 1.7 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+  animation: fadeInUp 0.8s ease-out 0.4s both !important;
+}
+
+/* 主按钮样式 - 强调行动 */
+.VPButton.brand {
+  background: white !important;
+  color: var(--vp-primary-dark) !important;
+  border: none !important;
+  padding: 0.85rem 1.85rem !important;
+  border-radius: var(--vp-radius-lg) !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  animation: fadeInUp 0.8s ease-out 0.6s both !important;
+}
+
+.VPButton.brand:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2) !important;
+  background: #F8FAFC !important;
+}
+
+/* 次要按钮样式 - 提供替代选择 */
+.VPButton.alt {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  padding: 0.85rem 1.85rem !important;
+  border-radius: var(--vp-radius-lg) !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  backdrop-filter: blur(10px) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  animation: fadeInUp 0.8s ease-out 0.7s both !important;
+}
+
+.VPButton.alt:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 深色模式适配 - 进一步优化视觉效果 */
+.dark .VPHero {
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%) !important;
+}
+
+.dark .VPHero::before {
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%) !important;
+}
+
+.dark .VPHero::after {
+  background: linear-gradient(rgba(58, 123, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(58, 123, 255, 0.08) 1px, transparent 1px);
+}
+
+.dark .VPHero .name {
+  background: linear-gradient(90deg, #FFFFFF, #94A3B8) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+.dark .VPHero .text {
+  color: #F8FAFC !important;
+}
+
+.dark .VPHero .tagline {
+  color: rgba(241, 245, 249, 0.85) !important;
+}
+
+.dark .VPButton.brand {
+  background: #3A7BFF !important;
+  color: white !important;
+}
+
+.dark .VPButton.brand:hover {
+  background: #2563EB !important;
+}
+
+.dark .VPButton.alt {
+  background: rgba(58, 123, 255, 0.1) !important;
+  border-color: rgba(58, 123, 255, 0.3) !important;
+  color: #F8FAFC !important;
+}
+
+.dark .VPButton.alt:hover {
+  background: rgba(58, 123, 255, 0.2) !important;
+  border-color: rgba(58, 123, 255, 0.5) !important;
+}
+
+/* 响应式设计优化 - 确保在所有设备上都有良好体验 */
+@media (max-width: 768px) {
+  .VPHero {
+    margin-top: 0 !important;
+    padding-top: 8rem !important;
+  }
+  
+  .VPHero .name {
+    font-size: 2.75rem !important;
+  }
+  
+  .VPHero .text {
+    font-size: 1.65rem !important;
+  }
+  
+  .VPHero .tagline {
+    font-size: 1.1rem !important;
+    max-width: 90% !important;
+  }
+  
+  .VPButton.brand,
+  .VPButton.alt {
+    padding: 0.75rem 1.5rem !important;
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .VPHero {
+    margin-top: 0 !important;
+    padding-top: 7rem !important;
+  }
+  
+  .VPHero .name {
+    font-size: 2.25rem !important;
+  }
+  
+  .VPHero .text {
+    font-size: 1.4rem !important;
+  }
+  
+  .VPHero .tagline {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+  }
+  
+  .VPButton.brand,
+  .VPButton.alt {
+    padding: 0.65rem 1.3rem !important;
+    font-size: 0.85rem !important;
+    margin-bottom: 0.75rem !important;
+    display: block !important;
+    width: 80% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* 响应式设计 - 服务领域卡片布局调整 */
+@media (max-width: 1024px) {
+  .service-card {
+    width: calc(50% - 1.5rem);
+  }
+}
+@media (max-width: 768px) {
+  .services-grid {
+    gap: 1rem;
+  }
+  
+  .service-card {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+/* 导航栏选中项样式优化 */
+.VPNavBarMenuLink {
+  /* 确保没有下划线 */
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* 移除悬停和选中状态的背景色，只保留字体高亮 */
+.VPNavBarMenuLink:hover,
+.VPNavBarMenuLink.active {
+  background-color: transparent !important;
+  color: var(--vp-primary) !important;
+}
+
+/* 深色模式适配 */
+.dark .VPNavBarMenuLink:hover,
+.dark .VPNavBarMenuLink.active {
+  background-color: transparent !important;
+  color: var(--vp-primary-light) !important;
+}
+
+/* ===== Banner样式优化 - 完整解决方案 ===== */
+/* 1. 设置banner背景颜色与底部完全一致 */
+.VPHero {
+  background: linear-gradient(135deg, rgba(45, 55, 72, 0.95) 0%, rgba(74, 85, 104, 0.9) 100%) !important;
+  color: #f8fafc !important;
+  backdrop-filter: blur(20px) !important;
+  border-top: none !important;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* 2. 移除banner上侧的间距 */
+.VPHero {
+  margin-top: 0 !important;  /* 移除顶部外边距 */
+  padding-top: var(--vp-space-24) !important;  /* 减少顶部内边距 */
+  padding-bottom: var(--vp-space-24) !important;  /* 保持底部内边距一致 */
+}
+
+/* 3. 确保公司名称单行显示，不换行 */
+.VPHero .name {
+  white-space: nowrap !important;
+  color: #f8fafc !important;
+  -webkit-text-fill-color: #f8fafc !important;
+  font-size: 4rem !important;
+  font-weight: 700 !important;
+  margin-bottom: var(--vp-space-4) !important;
+}
+
+/* 4. 优化公司名称和描述的居中效果 */
+.VPHero .container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  max-width: 100% !important;
+  padding: 0 var(--vp-space-4) !important;
+}
+
+/* 5. 确保文本内容水平居中并垂直对齐 */
+.VPHero .name,
+.VPHero .text,
+.VPHero .tagline {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: inline-block !important;
+  color: #f8fafc !important;
+}
+
+/* 6. 调整按钮区域的居中效果 */
+.VPHero .actions {
+  justify-content: center !important;
+  margin-top: var(--vp-space-8) !important;
+}
+
+/* 7. 确保背景渐变效果完整覆盖 */
+.VPHero::before {
+  display: none !important;
+}
+
+/* 隐藏服务领域卡片中的"查看更多"按钮 */
+.service-expand {
+  display: none !important;
+}
+
+/* ===== 页脚样式 - 与顶部导航栏呼应 ===== */
+.VPFooter {
+  background: linear-gradient(135deg, rgba(45, 55, 72, 0.95) 0%, rgba(74, 85, 104, 0.9) 100%) !important;
+  backdrop-filter: blur(20px) !important;
+  border-top: none !important;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05) !important;
+  color: #f8fafc !important;
+  padding: 2rem 0 !important;
+  position: relative !important;
+}
+
+.VPFooter .container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
+  text-align: center !important;
+}
+
+.VPFooter .message,
+.VPFooter .copyright {
+  color: #f8fafc !important;
+  line-height: 1.6 !important;
+  margin: 0.5rem 0 !important;
+}
+
+.VPFooter a {
+  color: #93c5fd !important;
+  text-decoration: none !important;
+  transition: color 0.3s ease !important;
+}
+.VPFooter a:hover {
+  color: #bfdbfe !important;
+  text-decoration: underline !important;
+}
+
+/* 添加页脚装饰效果 */
+.VPFooter::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 3px !important;
+background: linear-gradient(90deg, #60a5fa, #93c5fd, #bfdbfe, #93c5fd, #60a5fa) !important;
+  background-size: 200% auto !important;
+  animation: footerShine 3s linear infinite !important;
+}
+
+@keyframes footerShine {
+  to {
+    background-position: 200% center !important;
+  }
+}
+
+/* 响应式页脚样式调整 */
+@media (max-width: 768px) {
+  .VPFooter {
+    padding: 1.5rem 0 !important;
+  }
+  .VPFooter .container {
+    padding: 0 0.75rem !important;
+  }
+  .VPFooter .message,
+  .VPFooter .copyright {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .VPFooter {
+    padding: 1rem 0 !important;
+  }
+  
+  .VPFooter .container {
+    padding: 0 0.5rem !important;
+  }
+  
+  .VPFooter .message,
+  .VPFooter .copyright {
+    font-size: 0.85rem !important;
+  }
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--vp-primary) 0%, var(--vp-primary-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--vp-space-6);
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--vp-primary-dark);
+  margin-bottom: var(--vp-space-5);
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--vp-text-1);
+  margin-bottom: var(--vp-space-4);
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--vp-text-1);
+  margin-bottom: var(--vp-space-3);
+}
+
+p {
+  margin-bottom: var(--vp-space-4);
+  color: var(--vp-text-2);
+  line-height: 1.7;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+/* ===== 现代化科技公司风格导航栏设计 ===== */
+.VPNav {
+  background: rgba(255, 255, 255, 0.95);
+/* 隐藏顶部导航栏中社交链接的分隔符 */
+.menu + .social-links::before,
+.appearance + .social-links::before {
+  display: none !important;
+  content: none !important;
+}
+
+/* 确保导航栏其他元素不受影响 */
+.VPNavBar .social-links {
+  display: none !important;
+}
+color: var(--vp-text-2);
+  text-decoration: none;
+  font-weight: 500;
+  padding: var(--vp-space-2) var(--vp-space-4);
+  border-radius: var(--vp-radius);
+  transition: all 0.3s ease;
+  position: relative;
+  font-size: 1rem;
+}
+
+.VPNavScreen .vp-nav-links .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--vp-primary);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.VPNavScreen .vp-nav-links .nav-link:hover {
+  color: var(--vp-primary);
+  transform: translateY(-1px);
+}
+
+.VPNavScreen .vp-nav-links .nav-link:hover::after {
+  width: 100%;
+}
+
+/* ===== 修复：移除导航栏选中状态的背景色 ===== */
+
+/* 1. 移除亮色模式下选中状态的背景色，但保留悬停效果 */
+.VPNavBarMenuLink.active {
+  background-color: transparent !important; /* 透明背景 */
+}
+
+/* 保留悬停效果 */
+.VPNavBarMenuLink:hover {
+  background-color: var(--vp-primary-lightest) !important;
+}
+
+/* 2. 移除深色模式下选中状态的背景色，但保留悬停效果 */
+.dark .VPNavBarMenuLink.active {
+  background-color: transparent !important; /* 透明背景 */
+}
+
+/* 保留深色模式下的悬停效果 */
+.dark .VPNavBarMenuLink:hover {
+  background-color: rgba(59, 130, 246, 0.1) !important;
+}
+
+/* 3. 为选中状态添加替代视觉效果（可选） */
+.VPNavBarMenuLink.active {
+  font-weight: 600 !important; /* 加粗显示 */
+  position: relative;
+}
+
+/* 添加底部下划线作为选中状态的视觉提示 */
+.VPNavBarMenuLink.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 2px;
+  background-color: var(--vp-primary) !important;
+  border-radius: 1px;
+}
+
+/* 深色模式下的下划线颜色 */
+.dark .VPNavBarMenuLink.active::after {
+  background-color: var(--vp-primary-light) !important;
+}
+
+}
+.VPNavScreen .vp-nav-links .nav-link.active {
+color: var(--vp-primary);
+  font-weight: 600;
+}
+
+.VPNavScreen .vp-nav-links .nav-link::after {
+  width: 100%;
+}
+
+/* ===== 现代化科技风格Hero区域设计 ===== */
+.VPHero {
+  background: var(--vp-tech-gradient);
+  color: white;
+  padding: var(--vp-space-32) 0 var(--vp-space-24);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: 76px;
+}
+
+.VPHero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px);
+  }
+  50% { 
+    transform: translateY(-10px);
+  }
+}
+
+.VPHero .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 var(--vp-space-6);
+  position: relative;
+  z-index: 2;
+}
+
+.VPHero .name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: var(--vp-space-4);
+  background: linear-gradient(45deg, #fff, #F0F4F8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 8px 16px rgba(37, 99, 235, 0.3);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.VPHero .text {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: var(--vp-space-4);
+  opacity: 0.95;
+  letter-spacing: 0.01em;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.VPHero .tagline {
+  font-size: 1.375rem;
+  opacity: 0.9;
+  margin-bottom: var(--vp-space-10);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.VPHero .actions {
+  display: flex;
+  gap: var(--vp-space-4);
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+/* ===== 现代化科技公司官网风格重置样式 ===== */
+:root {
+  /* 现代化科技公司配色方案 - 更优雅的蓝紫色调 */
+  --vp-primary: #4F46E5;        /* 深紫蓝 */
+  --vp-primary-light: #6366F1;   /* 浅紫蓝 */
+  --vp-primary-lighter: #818CF8; /* 更浅紫蓝 */
+  --vp-primary-lightest: #E0E7FF; /* 最浅紫蓝 */
+  --vp-primary-dark: #4338CA;    /* 深紫蓝 */
+  --vp-primary-darker: #3730A3;  /* 更深紫蓝 */
+  
+  /* 现代化中性色调 - 更精致的灰度 */
+  --vp-neutral-50: #F8FAFC;
+  --vp-neutral-100: #F1F5F9;
+  --vp-neutral-200: #E2E8F0;
+  --vp-neutral-300: #CBD5E1;
+  --vp-neutral-400: #94A3B8;
+  --vp-neutral-500: #64748B;
+  --vp-neutral-600: #475569;
+  --vp-neutral-700: #334155;
+  --vp-neutral-800: #1E293B;
+  --vp-neutral-900: #0F172A;
+  
+  /* 现代化渐变背景 */
+  --vp-gradient: linear-gradient(135deg, #4F46E5 0%, #6366F1 50%, #818CF8 100%);
+  --vp-gradient-alt: linear-gradient(135deg, #1E293B 0%, #334155 100%);
+  --vp-gradient-light: linear-gradient(135deg, #E0E7FF 0%, #EEF2FF 100%);
+  
+  /* 背景与文本色 */
+  --vp-background: #FFFFFF;
+  --vp-background-alt: #F8FAFC;
+  --vp-background-soft: #F1F5F9;
+  --vp-background-mute: #E2E8F0;
+  
+  --vp-text-1: #1E293B;
+  --vp-text-2: #475569;
+  --vp-text-3: #64748B;
+  
+  /* 间距系统 - 更精细的间距 */
+  --vp-space-1: 0.25rem;
+  --vp-space-2: 0.5rem;
+  --vp-space-3: 0.75rem;
+  --vp-space-4: 1rem;
+  --vp-space-5: 1.25rem;
+  --vp-space-6: 1.5rem;
+  --vp-space-8: 2rem;
+  --vp-space-10: 2.5rem;
+  --vp-space-12: 3rem;
+  --vp-space-16: 4rem;
+  --vp-space-20: 5rem;
+  --vp-space-24: 6rem;
+  --vp-space-32: 8rem;
+  
+  /* 现代化圆角系统 */
+  --vp-radius-sm: 0.375rem;
+  --vp-radius: 0.5rem;
+  --vp-radius-md: 0.75rem;
+  --vp-radius-lg: 1rem;
+  --vp-radius-xl: 1.5rem;
+  --vp-radius-2xl: 2rem;
+  
+  /* 现代化阴影系统 */
+  --vp-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --vp-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --vp-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --vp-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --vp-shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --vp-shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+/* ===== 全局重置与现代化科技公司风格基础样式 ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #1e293b;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 强制浅色模式 */
+.dark {
+  --vp-background: #FFFFFF;
+  --vp-background-alt: #F8FAFC;
+  --vp-background-soft: #F1F5F9;
+  --vp-background-mute: #E2E8F0;
+  --vp-text-1: #1E293B;
+  --vp-text-2: #475569;
+  --vp-text-3: #64748B;
+}
+
+/* ===== 现代化科技公司风格字体与排版系统 ===== */
+h1, h2, h3, h4, h5, h6 {
+font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: var(--vp-space-4);
+  color: var(--vp-text-1);
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--vp-primary) 0%, var(--vp-primary-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--vp-space-6);
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--vp-primary-dark);
+  margin-bottom: var(--vp-space-5);
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--vp-text-1);
+  margin-bottom: var(--vp-space-4);
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--vp-text-1);
+  margin-bottom: var(--vp-space-3);
+}
+
+p {
+  margin-bottom: var(--vp-space-4);
+  color: var(--vp-text-2);
+  line-height: 1.7;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+/* ===== 现代化科技公司风格导航栏设计 ===== */
+.VPNav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--vp-neutral-200);
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.VPNav .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--vp-space-6);
+}
+
+.VPNav .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--vp-primary);
+  letter-spacing: -0.02em;
+}
+
+.VPNavBar .content {
+  padding: var(--vp-space-3) 0;
+}
+
+.VPNavBar .content-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.VPNavScreen .vp-nav-links {
+display: flex;
+gap: var(--vp-space-8);
+  align-items: center;
+}
+
+.VPNavScreen .vp-nav-links .nav-link {
+  color: var(--vp-text-2);
+  text-decoration: none;
+  font-weight: 500;
+  padding: var(--vp-space-2) var(--vp-space-4);
+  border-radius: var(--vp-radius);
+  transition: all 0.3s ease;
+  position: relative;
+  font-size: 1rem;
+}
+
+.VPNavScreen .vp-nav-links .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--vp-primary);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.VPNavScreen .vp-nav-links .nav-link:hover {
+  color: var(--vp-primary);
+  transform: translateY(-1px);
+}
+
+.VPNavScreen .vp-nav-links .nav-link:hover::after {
+width: 100%;
+}
+.VPNavScreen .vp-nav-links .nav-link.active {
+  color: var(--vp-primary);
+  font-weight: 600;
+}
+
+.VPNavScreen .vp-nav-links .nav-link.active::after {
+  width: 100%;
+}
+
+/* ===== 现代化科技风格Hero区域设计 ===== */
+/* 现代化科技风格Hero区域设计 - 修改为与底部一致的颜色 */
+.VPHero {
+  /* 更改背景色为与底部一致的白色背景 */
+  background: var(--vp-background);
+  /* 更改文本颜色为深色，确保可读性 */
+  color: var(--vp-text-1);
+  padding: var(--vp-space-24) 0 var(--vp-space-16); /* 减小上下内边距来降低高度 */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: 76px;
+  /* 确保在小屏幕上正确显示 */
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.VPHero .name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: var(--vp-space-4);
+  background: linear-gradient(45deg, #fff, #F0F4F8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 8px 16px rgba(37, 99, 235, 0.3);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.VPHero .text {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: var(--vp-space-4);
+  opacity: 0.95;
+  letter-spacing: 0.01em;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.VPHero .tagline {
+  font-size: 1.375rem;
+  opacity: 0.9;
+  margin-bottom: var(--vp-space-10);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.VPHero .actions {
+  display: flex;
+  gap: var(--vp-space-4);
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+/* ===== 现代化科技公司官网风格重置样式 ===== */
+:root {
+  /* 现代化科技公司配色方案 - 更优雅的蓝紫色调 */
+  --vp-primary: #4F46E5;        /* 深紫蓝 */
+  --vp-primary-light: #6366F1;   /* 浅紫蓝 */
+  --vp-primary-lighter: #818CF8; /* 更浅紫蓝 */
+  --vp-primary-lightest: #E0E7FF; /* 最浅紫蓝 */
+  --vp-primary-dark: #4338CA;    /* 深紫蓝 */
+  --vp-primary-darker: #3730A3;  /* 更深紫蓝 */
+  
+  /* 现代化中性色调 - 更精致的灰度 */
+  --vp-neutral-50: #F8FAFC;
+  --vp-neutral-100: #F1F5F9;
+  --vp-neutral-200: #E2E8F0;
+  --vp-neutral-300: #CBD5E1;
+  --vp-neutral-400: #94A3B8;
+  --vp-neutral-500: #64748B;
+  --vp-neutral-600: #475569;
+  --vp-neutral-700: #334155;
+  --vp-neutral-800: #1E293B;
+  --vp-neutral-900: #0F172A;
+  
+  /* 现代化渐变背景 */
+  --vp-gradient: linear-gradient(135deg, #4F46E5 0%, #6366F1 50%, #818CF8 100%);
+  --vp-gradient-alt: linear-gradient(135deg, #1E293B 0%, #334155 100%);
+  --vp-gradient-light: linear-gradient(135deg, #E0E7FF 0%, #EEF2FF 100%);
+  
+  /* 背景与文本色 */
+  --vp-background: #FFFFFF;
+  --vp-background-alt: #F8FAFC;
+  --vp-background-soft: #F1F5F9;
+  --vp-background-mute: #E2E8F0;
+  
+  --vp-text-1: #1E293B;
+  --vp-text-2: #475569;
+  --vp-text-3: #64748B;
+  
+  /* 间距系统 - 更精细的间距 */
+  --vp-space-1: 0.25rem;
+  --vp-space-2: 0.5rem;
+  --vp-space-3: 0.75rem;
+  --vp-space-4: 1rem;
+  --vp-space-5: 1.25rem;
+  --vp-space-6: 1.5rem;
+  --vp-space-8: 2rem;
+  --vp-space-10: 2.5rem;
+  --vp-space-12: 3rem;
+  --vp-space-16: 4rem;
+  --vp-space-20: 5rem;
+  --vp-space-24: 6rem;
+  --vp-space-32: 8rem;
+  
+  /* 现代化圆角系统 */
+  --vp-radius-sm: 0.375rem;
+  --vp-radius: 0.5rem;
+  --vp-radius-md: 0.75rem;
+  --vp-radius-lg: 1rem;
+  --vp-radius-xl: 1.5rem;
+  --vp-radius-2xl: 2rem;
+  
+  /* 现代化阴影系统 */
+  --vp-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --vp-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --vp-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --vp-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --vp-shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --vp-shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+/* ===== 全局重置与现代化科技公司风格基础样式 ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #1e293b;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 强制浅色模式 */
+.dark {
+  --vp-background: #FFFFFF;
+  --vp-background-alt: #F8FAFC;
+  --vp-background-soft: #F1F5F9;
+  --vp-background-mute: #E2E8F0;
+  --vp-text-1: #1E293B;
+  --vp-text-2: #475569;
+  --vp-text-3: #64748B;
+}
+
+/* ===== 现代化科技公司风格字体与排版系统 ===== */
+h1, h2, h3, h4, h5, h6 {
+font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: var(--vp-space-4);
+  color: var(--vp-text-1);
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--vp-primary) 0%, var(--vp-primary-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--vp-space-6);
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--vp-primary-dark);
+  margin-bottom: var(--vp-space-5);
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--vp-text-1);
+  margin-bottom: var(--vp-space-4);
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--vp-text-1);
+  margin-bottom: var(--vp-space-3);
+}
+
+p {
+  margin-bottom: var(--vp-space-4);
+  color: var(--vp-text-2);
+  line-height: 1.7;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+/* ===== 现代化科技公司风格导航栏设计 ===== */
+.VPNav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--vp-neutral-200);
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.VPNav .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--vp-space-6);
+}
+
+.VPNav .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--vp-primary);
+  letter-spacing: -0.02em;
+}
+
+.VPNavBar .content {
+  padding: var(--vp-space-3) 0;
+}
+
+.VPNavBar .content-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.VPNavScreen .vp-nav-links {
+display: flex;
+gap: var(--vp-space-8);
+  align-items: center;
+}
+
+.VPNavScreen .vp-nav-links .nav-link {
+  color: var(--vp-text-2);
+  text-decoration: none;
+  font-weight: 500;
+  padding: var(--vp-space-2) var(--vp-space-4);
+  border-radius: var(--vp-radius);
+  transition: all 0.3s ease;
+  position: relative;
+  font-size: 1rem;
+}
+
+.VPNavScreen .vp-nav-links .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--vp-primary);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.VPNavScreen .vp-nav-links .nav-link:hover {
+  color: var(--vp-primary);
+  transform: translateY(-1px);
+}
+
+.VPNavScreen .vp-nav-links .nav-link:hover::after {
+width: 100%;
+}
+.VPNavScreen .vp-nav-links .nav-link.active {
+  color: var(--vp-primary);
+  font-weight: 600;
+}
+
+.VPNavScreen .vp-nav-links .nav-link.active::after {
+  width: 100%;
+}
+
+/* ===== 现代化科技风格Hero区域设计 ===== */
+/* 现代化科技风格Hero区域设计 - 修改为与底部一致的颜色 */
+.VPHero {
+  /* 更改背景色为与底部一致的白色背景 */
+  background: var(--vp-background);
+  /* 更改文本颜色为深色，确保可读性 */
+  color: var(--vp-text-1);
+  padding: var(--vp-space-24) 0 var(--vp-space-16); /* 减小上下内边距来降低高度 */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: 76px;
+  /* 确保在小屏幕上正确显示 */
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* 修改VPHero中的name样式，移除渐变文字效果，确保字体清晰显示 */
+.VPHero .name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: var(--vp-space-4);
+  /* 移除背景渐变和文字透明效果 */
+  background: none;
+  -webkit-background-clip: none;
+  -webkit-text-fill-color: var(--vp-text-1);
+  background-clip: none;
+  /* 保留适当的文字阴影以增强可读性 */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* 修改VPHero中的text样式 */
+.VPHero .text {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: var(--vp-space-4);
+  opacity: 1;
+  color: var(--vp-text-1);
+  letter-spacing: 0.01em;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+/* 修改VPHero中的tagline样式 */
+.VPHero .tagline {
+  font-size: 1.375rem;
+  opacity: 1;
+  margin-bottom: var(--vp-space-10);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  color: var(--vp-text-2);
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+/* 修改按钮样式以适应新的背景色 */
+.VPButton.brand {
+  background: var(--vp-primary);
+  color: white;
+  backdrop-filter: none;
+  box-shadow: 0 8px 32px rgba(79, 70, 229, 0.3);
+}
+
+.VPButton.brand:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(79, 70, 229, 0.4);
+  background: var(--vp-primary-dark);
+}
+
+.VPButton.alt {
+  background: transparent;
+  color: var(--vp-primary);
+  border-color: var(--vp-primary-light);
+  backdrop-filter: none;
+}
+
+.VPButton.alt:hover {
+  background: rgba(79, 70, 229, 0.05);
+  border-color: var(--vp-primary);
+  transform: translateY(-2px);
+}
+
+/* 在小屏幕上调整margin-top，避免被导航栏遮挡 */
+@media (max-width: 768px) {
+  .VPHero {
+    margin-top: 0;
+    padding-top: 6rem; /* 减小小屏幕上的顶部内边距 */
+  }
+}
+
+@media (max-width: 480px) {
+  .VPHero {
+    margin-top: 0;
+    padding-top: 5rem; /* 减小超小屏幕上的顶部内边距 */
+  }
+}
+  
+  .VPNavScreen {
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  
+  .VPNavScreen .vp-nav-links {
+    justify-content: center !important;
+    gap: 1rem !important;
+    flex-wrap: wrap !important;
+  }
+  
+  .VPNavBarTitle {
+    font-size: 1.35rem !important;
+  }
+
+
+/* 响应式设计布局调整 - 确保移动设备上也能正确显示 */
+@media (max-width: 768px) {
+  .VPNav .container,
+  .VPNavBar .content,
+  .VPNavBar .content-body {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    text-align: center !important;
+  }
+  
+  .VPNavScreen {
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  
+  .VPNavScreen .vp-nav-links {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+  }
+}
+
+/* 移除任何可能阻止左右布局的额外样式 */
+.VPNav::before,
+.VPNav::after,
+.VPNavBar::before,
+.VPNavBar::after,
+.VPNavScreen::before,
+.VPNavScreen::after {
+  display: none !important;
+}
+
+/* 确保没有其他样式干扰布局 */
+:root {
+  --vp-nav-height: auto !important;
+  --vp-nav-width: auto !important;
+}
+
+.VPNavScreen .vp-nav-links .nav-link:hover {
+  color: var(--vp-primary);
+  background: rgba(79, 70, 229, 0.05);
+  transform: translateY(-1px);
+}
+
+.VPNavScreen .vp-nav-links .nav-link:hover::before {
+  left: 100%;
+}
+
+.VPNavScreen .vp-nav-links .nav-link.active {
+  color: var(--vp-primary);
+  background: rgba(79, 70, 229, 0.1);
+  font-weight: 600;
+}
+
+/* 确保导航栏整体布局正确 */
+.VPNav {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0.75rem 0;
+}
+
+.VPNav.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(30px);
+}
+
+/* 修复标题与菜单的 flex 布局 */
+.VPNavBarTitle {
+  margin-right: 0 !important;
+}
+
+.VPNavBarMenu {
+  margin-left: 0 !important;
+}
+
+/* 响应式布局调整 */
+@media (max-width: 768px) {
+  .VPNav .container {
+    padding: 0 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .VPNavBar .content {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .VPNavScreen .vp-nav-links {
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .VPNavScreen .vp-nav-links .nav-link {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .VPNav .container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .VPNavScreen .vp-nav-links {
+    flex-direction: row;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .VPNavScreen .vp-nav-links .nav-link {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+/* 移除可能影响布局的重复样式 */
+.VPNavBar .content-body {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+}
+
+/* 确保所有元素都在正确的位置 */
+.VPNav * {
+  box-sizing: border-box;
+}
+
+/* ===== 蓝色主题按钮风格优化 ===== */
+/* '了解公司'按钮（brand主题）样式 */
+/* ===== 美化按钮样式 - 全新设计 ===== */
+/* 移除之前的按钮样式 */
+.VPHero .actions .VPButton.brand,
+.VPHero .actions .VPButton.alt {
+all: unset !important;
+display: inline-flex !important;
+align-items: center !important;
+justify-content: center !important;
+cursor: pointer !important;
+font-family: inherit !important;
+border-radius: 12px !important; /* 更现代的圆角 */
+padding: 12px 28px !important;
+font-size: 1.05rem !important;
+font-weight: 600 !important;
+transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+text-decoration: none !important;
+position: relative !important;
+overflow: hidden !important;
+backface-visibility: hidden !important;
+}
+
+/* '了解公司'主按钮 - 现代化蓝色主题 */
+.VPHero .actions .VPButton.brand {
+background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%) !important;
+color: white !important;
+border: none !important;
+box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3) !important;
+}
+
+.VPHero .actions .VPButton.brand:hover {
+transform: translateY(-3px) !important;
+box-shadow: 0 8px 24px rgba(59, 130, 246, 0.4) !important;
+background: linear-gradient(135deg, #1E40AF 0%, #2563EB 100%) !important;
+}
+
+.VPHero .actions .VPButton.brand:active {
+transform: translateY(-1px) !important;
+box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3) !important;
+}
+
+/* 主按钮悬停时的发光效果 */
+.VPHero .actions .VPButton.brand::after {
+content: '' !important;
+position: absolute !important;
+top: 50% !important;
+left: 50% !important;
+width: 0 !important;
+height: 0 !important;
+background: rgba(255, 255, 255, 0.3) !important;
+border-radius: 50% !important;
+transform: translate(-50%, -50%) !important;
+transition: width 0.6s, height 0.6s !important;
+}
+
+.VPHero .actions .VPButton.brand:hover::after {
+width: 300px !important;
+height: 300px !important;
+}
+
+/* '服务领域'次要按钮 - 优雅设计 */
+.VPHero .actions .VPButton.alt {
+background: white !important;
+color: #1E40AF !important;
+border: 2px solid #DBEAFE !important;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+}
+
+.VPHero .actions .VPButton.alt:hover {
+transform: translateY(-3px) !important;
+border-color: #93C5FD !important;
+background: #F8FAFC !important;
+box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08) !important;
+}
+
+.VPHero .actions .VPButton.alt:active {
+transform: translateY(-1px) !important;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* 按钮组布局优化 */
+.VPHero .actions {
+display: flex !important;
+gap: 16px !important;
+justify-content: center !important;
+flex-wrap: wrap !important;
+margin-top: 32px !important;
+margin-bottom: 16px !important;
+}
+
+/* 响应式设计优化 */
+@media (max-width: 768px) {
+.VPHero .actions {
+flex-direction: column !important;
+align-items: center !important;
+gap: 12px !important;
+}
+
+.VPHero .actions .VPButton.brand,
+.VPHero .actions .VPButton.alt {
+padding: 11px 24px !important;
+font-size: 1rem !important;
+width: 100% !important;
+max-width: 320px !important;
+}
+}
+
+@media (max-width: 480px) {
+.VPHero .actions .VPButton.brand,
+.VPHero .actions .VPButton.alt {
+padding: 10px 20px !important;
+font-size: 0.95rem !important;
+max-width: 280px !important;
+}
+}
+
+/* 深色模式下的按钮优化 */
+.dark .VPHero .actions .VPButton.brand {
+background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%) !important;
+box-shadow: 0 4px 16px rgba(59, 130, 246, 0.2) !important;
+}
+
+.dark .VPHero .actions .VPButton.brand:hover {
+background: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%) !important;
+box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3) !important;
+}
+
+.dark .VPHero .actions .VPButton.alt {
+background: #1E293B !important;
+color: #93C5FD !important;
+border-color: #334155 !important;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.dark .VPHero .actions .VPButton.alt:hover {
+background: #334155 !important;
+border-color: #60A5FA !important;
+color: #DBEAFE !important;
+box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* 确保按钮在所有状态下的文字都清晰可见 */
+.VPHero .actions .VPButton.brand,
+.VPHero .actions .VPButton.alt {
+text-shadow: none !important;
+letter-spacing: 0.02em !important;
+text-transform: none !important;
+}
+
+/* 禁用按钮的默认focus样式，使用自定义样式 */
+.VPHero .actions .VPButton.brand:focus,
+.VPHero .actions .VPButton.alt:focus {
+outline: none !important;
+}
+
+.VPHero .actions .VPButton.brand:focus-visible,
+.VPHero .actions .VPButton.alt:focus-visible {
+box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3) !important;
+z-index: 1 !important;
+}
