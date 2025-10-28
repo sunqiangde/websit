@@ -5,7 +5,8 @@ export default defineConfig({
   description: '专业提供建筑智能化、系统集成、产品开发等IT服务，ISO900系列质量管理体系认证',
   
   // GitHub Pages部署配置
-  base: process.env.NODE_ENV === 'production' ? '/websit/' : '/',
+  // 修改为根目录部署
+  base: '/',
   
   // 禁用夜间模式
   appearance: false,
